@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForumYorumYaz"
+    android:background="@color/white">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forumYorumYazReyclerView"
+        android:layout_below="@id/forumKonuBasligi"
+        android:layout_above="@id/forumYorumYapEditButon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/forumKonuBasligi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/forumYorumYapEditText"
+        android:layout_width="250dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Yorum yap"
+        android:layout_below="@id/forumYorumYazReyclerView"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/forumYorumYapEditButon"
+        android:layout_toRightOf="@+id/forumYorumYapEditText"
+        android:layout_alignParentBottom="true"
+        android:text="Yorum yap"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+</RelativeLayout>

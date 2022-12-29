@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="70dp"
+    android:background="@drawable/wallpaper"
+    android:id="@+id/gonderiRelativeLayout">
+
+
+    <TextView
+        android:id="@+id/gonderiKullaniciId"
+        android:text="kullaniciId"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/gonderxmlText"
+        android:text="26 aralık"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/gonderiKullaniciId"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/gonderiTarih"
+        android:layout_below="@id/gonderxmlText"
+        android:text="26 aralık"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_marginLeft="270dp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+
+
+
+
+
+</RelativeLayout>

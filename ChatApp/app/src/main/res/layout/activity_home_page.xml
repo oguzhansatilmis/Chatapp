@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity"
+    android:background="@drawable/wallpaper">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timelineReyc"
+        android:layout_above="@id/gonderiPaylasButon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/gonderiPaylas"
+        android:hint="Bişeyler yaz"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_above="@id/normalButon"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/gonderiPaylasButon"
+        android:layout_toRightOf="@id/gonderiPaylas"
+        android:backgroundTint="@color/teal_700"
+        android:text="Paylaş"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:layout_above="@id/normalButon"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+    <Button
+        android:id="@+id/normalButon"
+        android:layout_above="@id/kullaniciHakkinda"
+        android:text="Profil"
+        android:textColor="@color/teal_700"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/kullaniciHakkinda"
+        android:background="@drawable/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/isim"
+            android:text="isim"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/id"
+            android:text="id"
+            android:layout_below="@id/isim"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/bio"
+            android:text="bio"
+            android:layout_below="@id/id"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/gonderiSayiText"
+            android:layout_toRightOf="@id/id"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:text="Gönderi Sayısı"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/takipEdilenText"
+            android:layout_toRightOf="@id/id"
+            android:layout_below="@id/gonderiSayiText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:text="Takip edilen"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/takipciText"
+            android:layout_toRightOf="@id/id"
+            android:layout_below="@id/takipEdilenText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:text="Takipçi"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+        <TextView
+            android:id="@+id/gonderiSayiInt"
+            android:layout_toRightOf="@id/gonderiSayiText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/takipEdilenSayiInt"
+            android:layout_below="@id/gonderiSayiText"
+            android:layout_toRightOf="@id/takipEdilenText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="45dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/takipciSayiInt"
+            android:layout_below="@id/takipEdilenSayiInt"
+            android:layout_toRightOf="@id/takipciText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="75dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

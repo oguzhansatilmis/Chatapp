@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/asdasdsad"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ECE1E1"
+    android:backgroundTint="#23F245"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/mesajUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="username"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+
+    </TextView>
+
+
+</RelativeLayout>

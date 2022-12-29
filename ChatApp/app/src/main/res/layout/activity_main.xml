@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpaper">
+
+    <TextView
+        android:id="@+id/textbilgi"
+        android:text="AndroidApp1"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <EditText
+        android:layout_below="@id/textbilgi"
+        android:id="@+id/emailTextKayit"
+        android:hint="Lütfen email adresinizi giriniz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/sifreTextKayit"
+        android:hint="Lütfen geçerli şifre giriniz"
+        android:layout_below="@id/emailTextKayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:password="true">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/kullaniciID"
+        android:hint="Kullanıcı idnizi giriniz:"
+        android:layout_below="@id/sifreTextKayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/kullaniciIsmi"
+        android:hint="İsminiz"
+        android:layout_below="@id/kullaniciID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/kullaniciBiografi"
+        android:hint="Biyografi"
+        android:textAlignment="textStart"
+        android:layout_below="@id/kullaniciIsmi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat">
+
+    </EditText>
+
+
+
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:textColor="@color/black"
+       android:backgroundTint="@color/white"
+        android:text=" Hemen kayıt ol"
+        android:layout_below="@id/kullaniciBiografi"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/chatUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="6"
+            android:textColor="#ecf0f1"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/Top"
+        android:layout_above="@id/Bot"
+        android:id="@+id/chatRecycviwe"
+        android:background="@drawable/chatwallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/Bot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/mesajEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="6"
+            android:hint="Mesaj giriniz"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textColorHint="#ecf0f1">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ikinciİmage"
+            android:layout_width="0dp"
+            android:src="@drawable/send_image"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

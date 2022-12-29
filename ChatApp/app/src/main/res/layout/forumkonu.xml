@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:background="@color/white"
+      android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/konubaslik"
+        android:text="26 aralık"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/forumtarih"
+        android:text="denemesaat"
+        android:layout_below="@id/konubaslik"
+        android:textColor="@color/black"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/konuyuAcan"
+        android:text="denemesaat"
+        android:layout_below="@id/konubaslik"
+        android:textColor="@color/black"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

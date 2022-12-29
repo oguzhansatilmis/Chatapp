@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GirisYap"
+    android:background="@drawable/wallpaper">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/sosyalmedya"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="AndroidApp1"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:hint="Email"
+        android:id="@+id/emailText"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/sosyalmedya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:hint="Sifre"
+        android:id="@+id/sifreText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/emailText"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:password="true">
+
+    </EditText>
+    <Button
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:id="@+id/girisyapButon"
+        android:layout_below="@id/sifreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="giris yap">
+
+    </Button>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/girisyapButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesabın yoksa kayıt ol"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:id="@+id/kayitOlButon"
+        android:layout_below="@id/girisyapButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="kayıt ol">
+
+    </Button>
+
+
+
+</RelativeLayout>

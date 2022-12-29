@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wallpaper"
+    android:layout_height="match_parent"
+    tools:context=".profilGoster">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/gidilenProfilRelativeLayout"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:id="@+id/gidilenKullaniciAdi"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kullanici adi"
+        android:textSize="25dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:id="@+id/gidilenKullaniciID"
+        android:layout_below="@id/gidilenKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kullaniciID"
+        android:textSize="25dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:id="@+id/gidilenKullaniciBio"
+        android:layout_below="@id/gidilenKullaniciID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="25dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/mesajAt"
+        android:layout_below="@id/gidilenKullaniciBio"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj at">
+
+    </Button>
+    <Button
+        android:id="@+id/takipButon"
+        android:layout_above="@id/mesajAt"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takip et">
+
+    </Button>
+    <TextView
+        android:id="@+id/gonderiSayiText"
+        android:layout_below="@id/gidilenKullaniciBio"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:text="Gönderi Sayısı"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/gonderiSayiInt"
+        android:layout_toRightOf="@id/gonderiSayiText"
+        android:layout_below="@id/gidilenKullaniciBio"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/normalButon"
+        android:text="Profil"
+        android:layout_above="@id/gidilenProfilRelativeLayout"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/digerkullaniciprofilgosterRecy"
+        android:layout_above="@id/normalButon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+</RelativeLayout>

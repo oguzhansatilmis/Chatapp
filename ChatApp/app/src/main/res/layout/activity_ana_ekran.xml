@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnaEkran"
+    android:background="@drawable/wallpaper">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/anaEkranRecylerView"
+        android:background="@drawable/wallpaper"
+        android:layout_above="@id/anaEkranBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/anaEkranBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:text="AndroidApp1"
+            android:textColor="#0E5AF1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/app"
+            android:backgroundTint="@color/white"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+        <ImageView
+            android:id="@+id/homepage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/app"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homepage">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/bildirim"
+            android:layout_below="@+id/app"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/homepage"
+            android:background="@drawable/bildirim"
+            android:layout_height="30dp">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/friends"
+            android:layout_below="@+id/app"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/bildirim"
+            android:background="@drawable/friends"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/forum"
+            android:layout_below="@+id/app"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/friends"
+            android:background="@drawable/forum"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
